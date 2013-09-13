@@ -3,16 +3,26 @@ from flask import Flask, redirect, url_for
 
 app = Flask(__name__)
 
-
-# Home page. Index link for all assignments
 @app.route('/')
 def hello():
     return redirect(url_for('static', filename='Index.html'))
-# # Local: 470 Site
 
-# @app.route('/local')
-# def local():
-#     return redirect(url_for('static', filename='occs home.html'))
+@app.route('occs home.html')
+def assignment_1():
+    return redirect(url_for('static', filename='occs home.html'))
+@app.route('')
+def assignment_3():
+    return redirect(url_for('static', filename=''))
+
+@app.route('')
+def assignment4():
+    return redirect(url_for('static', filename=''))
+@app.route('')
+def assignment5():
+    return redirect(url_for('static', filename=''))
+@app.route('')
+def assignment6():
+    return redirect(url_for('static', filename=''))
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
