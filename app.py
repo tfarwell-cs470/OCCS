@@ -3,11 +3,11 @@ from flask import Flask, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/Index.html')
 def hello():
     return redirect(url_for('static', filename='Index.html'))
 
-@app.route('occs home.html')
+@app.route('/occs home.html')
 def assignment_1():
     return redirect(url_for('static', filename='occs home.html'))
 @app.route('')
